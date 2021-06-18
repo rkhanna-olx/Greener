@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController">
+            <connections>
+                <outlet property="addToCartButton" destination="rkb-zt-eJP" id="BbE-aW-xA4"/>
+                <outlet property="addToCartContainerView" destination="2ks-GO-VZM" id="AQs-GT-pMv"/>
+                <outlet property="tableView" destination="1KY-ia-mQQ" id="vVV-1z-cKY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YWK-xS-HC5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-GO-VZM">
+                    <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkb-zt-eJP" customClass="GreenerButton" customModule="greener" customModuleProvider="target">
+                            <rect key="frame" x="8" y="0.0" width="359" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="16"/>
+                            <state key="normal" title="Add to cart">
+                                <color key="titleColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="greenerButtonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rkb-zt-eJP" secondAttribute="trailing" constant="8" id="2ui-g6-CCC"/>
+                        <constraint firstItem="rkb-zt-eJP" firstAttribute="leading" secondItem="2ks-GO-VZM" secondAttribute="leading" constant="8" id="4Gp-wC-bEj"/>
+                        <constraint firstItem="rkb-zt-eJP" firstAttribute="top" secondItem="2ks-GO-VZM" secondAttribute="top" id="EHD-Fm-teD"/>
+                        <constraint firstAttribute="bottom" secondItem="rkb-zt-eJP" secondAttribute="bottom" id="W0y-LJ-MNB"/>
+                        <constraint firstAttribute="height" constant="64" id="pSL-hh-tY8"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-ia-mQQ" customClass="GreenerTableView" customModule="greener" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="16" width="375" height="587"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SgZ-2e-IHR"/>
+                        <outlet property="delegate" destination="-1" id="6Xd-cF-kMd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ETb-HA-te6"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ETb-HA-te6" firstAttribute="trailing" secondItem="2ks-GO-VZM" secondAttribute="trailing" id="1jZ-Uj-IGR"/>
+                <constraint firstItem="1KY-ia-mQQ" firstAttribute="leading" secondItem="ETb-HA-te6" secondAttribute="leading" id="84z-6u-g7y"/>
+                <constraint firstItem="2ks-GO-VZM" firstAttribute="leading" secondItem="ETb-HA-te6" secondAttribute="leading" id="Agq-Bf-Bby"/>
+                <constraint firstItem="ETb-HA-te6" firstAttribute="bottom" secondItem="2ks-GO-VZM" secondAttribute="bottom" id="D5c-No-9KQ"/>
+                <constraint firstItem="2ks-GO-VZM" firstAttribute="top" secondItem="1KY-ia-mQQ" secondAttribute="bottom" id="NvL-Ma-pyj"/>
+                <constraint firstItem="1KY-ia-mQQ" firstAttribute="top" secondItem="ETb-HA-te6" secondAttribute="top" constant="16" id="ePV-4r-2g4"/>
+                <constraint firstItem="ETb-HA-te6" firstAttribute="trailing" secondItem="1KY-ia-mQQ" secondAttribute="trailing" id="xn8-Kn-G8Z"/>
+            </constraints>
+            <point key="canvasLocation" x="128.80000000000001" y="84.107946026986511"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="rkb-zt-eJP">
+            <size key="intrinsicContentSize" width="90" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

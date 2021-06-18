@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="9Yb-0L-AOv" id="J7M-Z5-IQd"/>
+                <outlet property="addToCartButton" destination="S6f-mZ-3bl" id="1Cd-JO-cnS"/>
+                <outlet property="addToCartContainerView" destination="Py0-4P-Nsn" id="PEH-4n-2Hi"/>
+                <outlet property="loadingView" destination="S91-fg-1h1" id="xXa-M4-MbV"/>
+                <outlet property="tableView" destination="baE-7Y-7tb" id="0SH-XH-G15"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YWK-xS-HC5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="baE-7Y-7tb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dW3-aD-b4N"/>
+                        <outlet property="delegate" destination="-1" id="sa5-4x-wha"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Py0-4P-Nsn">
+                    <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6f-mZ-3bl" customClass="GreenerButton" customModule="greener" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="359" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="16"/>
+                            <state key="normal" title="Add to cart">
+                                <color key="titleColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="greenerButtonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addToCartButtonClicked:" destination="-1" eventType="touchUpInside" id="sgP-Wg-RND"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="S6f-mZ-3bl" firstAttribute="leading" secondItem="Py0-4P-Nsn" secondAttribute="leading" constant="8" id="2U6-Vp-xJE"/>
+                        <constraint firstAttribute="bottom" secondItem="S6f-mZ-3bl" secondAttribute="bottom" constant="8" id="3G0-vH-M6x"/>
+                        <constraint firstAttribute="height" constant="64" id="HKD-s3-3Sp"/>
+                        <constraint firstAttribute="trailing" secondItem="S6f-mZ-3bl" secondAttribute="trailing" constant="8" id="S5c-rw-vNM"/>
+                        <constraint firstItem="S6f-mZ-3bl" firstAttribute="top" secondItem="Py0-4P-Nsn" secondAttribute="top" constant="8" id="c4j-Xc-aPF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S91-fg-1h1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-0L-AOv">
+                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9Yb-0L-AOv" firstAttribute="centerX" secondItem="S91-fg-1h1" secondAttribute="centerX" id="7jN-4X-8Ww"/>
+                        <constraint firstItem="9Yb-0L-AOv" firstAttribute="centerY" secondItem="S91-fg-1h1" secondAttribute="centerY" id="m03-2v-k7s"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XIY-ez-xFO"/>
+            <color key="backgroundColor" name="separator"/>
+            <constraints>
+                <constraint firstItem="S91-fg-1h1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4lU-wL-xDY"/>
+                <constraint firstItem="baE-7Y-7tb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4oT-En-Gv4"/>
+                <constraint firstItem="XIY-ez-xFO" firstAttribute="bottom" secondItem="Py0-4P-Nsn" secondAttribute="bottom" id="7pd-F8-PCq"/>
+                <constraint firstItem="Py0-4P-Nsn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F5j-9D-Z3f"/>
+                <constraint firstAttribute="trailing" secondItem="Py0-4P-Nsn" secondAttribute="trailing" id="Fzn-gT-kPo"/>
+                <constraint firstAttribute="trailing" secondItem="S91-fg-1h1" secondAttribute="trailing" id="PNN-Cu-BCN"/>
+                <constraint firstAttribute="bottom" secondItem="S91-fg-1h1" secondAttribute="bottom" id="Pcf-JJ-sCZ"/>
+                <constraint firstItem="Py0-4P-Nsn" firstAttribute="top" secondItem="baE-7Y-7tb" secondAttribute="bottom" id="fpe-Wp-dOU"/>
+                <constraint firstItem="S91-fg-1h1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lff-VM-RtT"/>
+                <constraint firstItem="baE-7Y-7tb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nda-vH-xny"/>
+                <constraint firstAttribute="trailing" secondItem="baE-7Y-7tb" secondAttribute="trailing" id="q6V-hP-MMk"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131.78410794602701"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="S6f-mZ-3bl">
+            <size key="intrinsicContentSize" width="90" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="separator">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

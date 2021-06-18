@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.2)
+  - MVVMRB (0.2.5)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.2)
+  - MVVMRB
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MVVMRB
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MVVMRB: a762bc1597b762c16a58aa07f72174ddfdc4f46d
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+
+PODFILE CHECKSUM: 735c7c253a00871e4165d20025478098a5dd5d6b
+
+COCOAPODS: 1.10.1
