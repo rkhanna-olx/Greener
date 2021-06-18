@@ -52,10 +52,10 @@ The figure to the right shows the product roadmap.
 
 
 **The Architecture**
-
+![architecture](https://user-images.githubusercontent.com/86095130/122581887-27a7ee00-d075-11eb-931d-67e1fdd28897.png)
 
 **The Journey**
-
+![AppDemo](Images/app_demo.mov)
 
 **UI/UX Tools**
   1. Sketch (https://www.sketch.com/) - UI tool 
