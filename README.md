@@ -31,6 +31,7 @@ A B2B marketplace connecting the sources of green materials to industry-wide con
 This will be a win-win for all parties as green material suppliers will have access to a huge market to give them sustained demand. The larger volumes shall lower the cost of the material. Industries will get easy access and more choice in sourcing green material.
 Moreover, the marketplace could provide uniform certification and an easy way of narrating the reduction in carbon footprint.
 
+[![overview](https://user-images.githubusercontent.com/86095130/122582807-3347e480-d076-11eb-97a0-06fcb6d7175a.png)](https://youtu.be/VkWzTiD84x4)
 
 
 **The idea**
