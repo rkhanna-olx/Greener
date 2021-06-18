@@ -1,21 +1,21 @@
 //
-//  AccountViewController.swift
+//  ListingViewController.swift
 //  greener
 //
-//  Created by Rahul on 17/06/21.
+//  Created by Rahul on 18/06/21.
 //
 
 import Foundation
 import UIKit
 import MVVMRB
 
-protocol AccountViewControllerDependencyProtocol {
+protocol ListingViewControllerDependencyProtocol {
 }
 
-protocol AccountViewControllerProtocol{
+protocol ListingViewControllerProtocol{
 }
 
-class AccountViewController: BaseViewController<AccountViewControllerDependencyProtocol, AccountViewModelProtocol, AccountRouterProtocol>, AccountViewControllerProtocol {
+class ListingViewController: ViewController<ListingViewControllerDependencyProtocol, ListingViewModelProtocol, ListingRouterProtocol>, ListingViewControllerProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

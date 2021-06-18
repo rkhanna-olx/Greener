@@ -28,10 +28,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-GO-VZM">
-                    <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkb-zt-eJP" customClass="GreenerButton" customModule="greener" customModuleProvider="target">
-                            <rect key="frame" x="8" y="0.0" width="359" height="64"/>
+                            <rect key="frame" x="8" y="0.0" width="359" height="48"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="16"/>
                             <state key="normal" title="Add to cart">
@@ -50,11 +50,11 @@
                         <constraint firstItem="rkb-zt-eJP" firstAttribute="leading" secondItem="2ks-GO-VZM" secondAttribute="leading" constant="8" id="4Gp-wC-bEj"/>
                         <constraint firstItem="rkb-zt-eJP" firstAttribute="top" secondItem="2ks-GO-VZM" secondAttribute="top" id="EHD-Fm-teD"/>
                         <constraint firstAttribute="bottom" secondItem="rkb-zt-eJP" secondAttribute="bottom" id="W0y-LJ-MNB"/>
-                        <constraint firstAttribute="height" constant="64" id="pSL-hh-tY8"/>
+                        <constraint firstAttribute="height" constant="48" id="pSL-hh-tY8"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-ia-mQQ" customClass="GreenerTableView" customModule="greener" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="16" width="375" height="587"/>
+                    <rect key="frame" x="0.0" y="16" width="375" height="603"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="SgZ-2e-IHR"/>

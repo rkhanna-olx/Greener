@@ -36,7 +36,10 @@
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cardboard, biodegradable plates…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUO-C0-rPG">
                             <rect key="frame" x="36" y="16.5" width="291" height="15.5"/>
                             <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="hjq-vZ-vmK"/>
+                            </connections>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

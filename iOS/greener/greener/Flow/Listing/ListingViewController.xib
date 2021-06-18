@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListingViewController">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="YWK-xS-HC5"/>
             </connections>
@@ -18,22 +18,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_dummy" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-ub-rvb">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listing_dummy" translatesAutoresizingMaskIntoConstraints="NO" id="M2f-eG-zm7">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="bAc-5i-xPy"/>
+            <viewLayoutGuide key="safeArea" id="e7R-Lw-MyD"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="g3K-ub-rvb" firstAttribute="leading" secondItem="bAc-5i-xPy" secondAttribute="leading" id="7eR-IQ-WeT"/>
-                <constraint firstItem="g3K-ub-rvb" firstAttribute="top" secondItem="bAc-5i-xPy" secondAttribute="top" id="9SP-SB-5P4"/>
-                <constraint firstItem="bAc-5i-xPy" firstAttribute="bottom" secondItem="g3K-ub-rvb" secondAttribute="bottom" id="jNe-5m-RgW"/>
-                <constraint firstItem="bAc-5i-xPy" firstAttribute="trailing" secondItem="g3K-ub-rvb" secondAttribute="trailing" id="qVq-cs-cP1"/>
+                <constraint firstItem="e7R-Lw-MyD" firstAttribute="trailing" secondItem="M2f-eG-zm7" secondAttribute="trailing" id="1kQ-sh-zn3"/>
+                <constraint firstItem="e7R-Lw-MyD" firstAttribute="bottom" secondItem="M2f-eG-zm7" secondAttribute="bottom" id="PSg-2R-0X7"/>
+                <constraint firstItem="M2f-eG-zm7" firstAttribute="top" secondItem="e7R-Lw-MyD" secondAttribute="top" id="VFg-80-gWS"/>
+                <constraint firstItem="M2f-eG-zm7" firstAttribute="leading" secondItem="e7R-Lw-MyD" secondAttribute="leading" id="sfn-dD-O4Q"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="82"/>
+            <point key="canvasLocation" x="130" y="110"/>
         </view>
     </objects>
     <resources>
-        <image name="account_dummy" width="442" height="856"/>
+        <image name="listing_dummy" width="442" height="856"/>
     </resources>
 </document>

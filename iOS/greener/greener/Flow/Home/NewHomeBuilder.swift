@@ -17,6 +17,10 @@ class NewHomeBuilderDependency: Component<NewHomeDependencyProtocol>, NewHomeVie
     var productService: ProductServiceProtocol {
         return API.productService()
     }
+    
+    var listingBuilder: ListingBuilder {
+        return ListingBuilder(dependency: ListingDependency())
+    }
 }
 
 final class NewHomeBuilder: Builder<NewHomeDependencyProtocol> {

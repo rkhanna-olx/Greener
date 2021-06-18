@@ -96,3 +96,16 @@ extension NewHomeViewController: ProductDetailSimilarListingsTableViewCellDelega
         }
     }
 }
+
+extension NewHomeViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        if let text = textField.text, text.count > 0, let navigationController = self.navigationController {
+            router.routeToListing(navigationController: navigationController)
+        }
+        
+        return true
+    }
+}
