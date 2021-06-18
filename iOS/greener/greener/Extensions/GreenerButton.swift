@@ -35,7 +35,7 @@ class GreenerButton: UIButton {
     func customize(withStyle style: GreenerButtonStyle) {
         switch style {
         case .filledPrimary:
-            layer.cornerRadius = 4
+            layer.cornerRadius = 24
             backgroundColor = GreenerColor.primaryCTA
             setTitleColor(.white, for: .normal)
         case .filledRecommendation:
