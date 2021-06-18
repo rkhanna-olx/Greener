@@ -42,12 +42,12 @@ The figure to the right shows the product roadmap.
 
 **The solution**
 
-Built an iOS  app for solutioning the problem with the following tools
-Xcode (https://developer.apple.com/xcode/) - The IDE used for iOS App Development
-Cocoapods(https://guides.cocoapods.org/) - Dependency Management
-IBM Cloud Functions (https://cloud.ibm.com/functions/) - Cloud Function Actions
-IBM Cloudant DB (https://cloud.ibm.com/catalog/services/cloudant) - Cloudant DB 
-API Gateway (https://cloud.ibm.com/functions/apimanagement) - Cloud Functions API
+  1. Built an iOS  app for solutioning the problem with the following tools
+  2. Xcode (https://developer.apple.com/xcode/) - The IDE used for iOS App Development
+  3. Cocoapods(https://guides.cocoapods.org/) - Dependency Management
+  4. IBM Cloud Functions (https://cloud.ibm.com/functions/) - Cloud Function Actions
+  5. IBM Cloudant DB (https://cloud.ibm.com/catalog/services/cloudant) - Cloudant DB 
+  6. API Gateway (https://cloud.ibm.com/functions/apimanagement) - Cloud Functions API
 
 
 **The Architecture**
@@ -56,24 +56,35 @@ API Gateway (https://cloud.ibm.com/functions/apimanagement) - Cloud Functions AP
 **The Journey**
 
 
-**UI/UX Tools **
-Sketch (https://www.sketch.com/) - UI tool 
-Adobe Premiere pro (https://www.adobe.com/in/products/premiere.html) - Video editing
-Adobe After Effects (https://www.adobe.com/in/products/aftereffects.html) - video editing
+**UI/UX Tools**
+  1. Sketch (https://www.sketch.com/) - UI tool 
+  2. Adobe Premiere pro (https://www.adobe.com/in/products/premiere.html) - Video editing
+  3. Adobe After Effects (https://www.adobe.com/in/products/aftereffects.html) - video editing
 
 **Authors**
 Team - Overmorrow @OLX for WIT | Hackathon 2021
-  1.Akshita Rastogi
-  2.Monika Katiyar 
-  3.Roopsi Aggarwal
-  4.Yogesh Gurera
-  5.Rahul Khanna
+  1. Akshita Rastogi
+  2. Monika Katiyar 
+  3. Roopsi Aggarwal
+  4. Yogesh Gurera
+  5. Rahul Khanna
   
 Team Mentor - Nitin Shekhar 
 
 
-**Live Demo:****
+**Live Demo:**
 https://youtu.be/VkWzTiD84x4
+
+
+**References**
+  1. https://www.nationalgeographic.com/environment/article/food-packaging-plastics-recycle-solutions 
+  2. https://foodprint.org/reports/the-foodprint-of-food-packaging/#section_2
+  3. https://foodprint.org/issues/the-environmental-impact-of-food-packaging/
+  4. https://www.cii.in/webcms/Upload/BCG-CII%20Green%20Mfg%20Report.pdf
+  5. https://www.mckinsey.com/industries/paper-forest-products-and-packaging/our-insights/the-drive-toward-sustainability-in-packaging-beyond-the-quick-wins# 
+
+
+
 
 
 
