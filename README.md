@@ -39,6 +39,7 @@ We’re reimagining how industries will source green material for food packaging
 It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. Providing a platform with a service of monitoring food throughout the entire process starting from placing an order to food preparation and delivery, will enable consumers to be more trustworthy and relaxed while savoring their taste buds.
 The figure to the right shows the product roadmap.
 
+[roadmap](https://user-images.githubusercontent.com/86095130/122581513-bf590c80-d074-11eb-8eb7-e4f6a57a1e3d.jpg)
 
 **The solution**
 
@@ -83,9 +84,6 @@ https://youtu.be/VkWzTiD84x4
   4. https://www.cii.in/webcms/Upload/BCG-CII%20Green%20Mfg%20Report.pdf
   5. https://www.mckinsey.com/industries/paper-forest-products-and-packaging/our-insights/the-drive-toward-sustainability-in-packaging-beyond-the-quick-wins# 
 
-
-![Some![image](https://user-images.githubusercontent.com/86095130/122580907-19a59d80-d074-11eb-8d19-3d85c8ce2817.jpeg)
-](Images/roadmap.jpg)
 
 
 
