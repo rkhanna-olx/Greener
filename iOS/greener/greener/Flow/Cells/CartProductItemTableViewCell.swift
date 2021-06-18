@@ -21,10 +21,21 @@ class CartProductItemTableViewCell: UITableViewCell {
     private var indexPath: IndexPath = IndexPath(row: 0, section: 0)
     weak var delegate: CartProductItemTableViewCellDelegate?
     
+    private struct Constants {
+        static let cornerRadius: CGFloat = 4.0
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         selectionStyle = .none
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        productImageView?.layer.cornerRadius = Constants.cornerRadius
+        productImageView?.layer.masksToBounds = true
     }
     
     func setupCell(_ cartItem: CartItemDTOProtocol, indexPath: IndexPath) {

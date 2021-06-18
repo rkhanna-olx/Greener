@@ -45,6 +45,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="selectedItemsLabel" destination="xEC-xK-ZSf" id="pwf-e0-CZh"/>
                 <outlet property="tableView" destination="4mQ-4B-57M" id="1Hx-bO-zNX"/>
             </connections>
             <point key="canvasLocation" x="25.362318840579711" y="47.879464285714285"/>

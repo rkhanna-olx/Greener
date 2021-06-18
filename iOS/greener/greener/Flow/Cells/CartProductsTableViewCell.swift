@@ -9,6 +9,7 @@ import UIKit
 
 class CartProductsTableViewCell: UITableViewCell {
     @IBOutlet weak var tableView: GreenerTableView!
+    @IBOutlet weak var selectedItemsLabel: UILabel!
     
     private var cartCoordinator: CartCoodinatorProtocol?
     
@@ -31,6 +32,15 @@ class CartProductsTableViewCell: UITableViewCell {
     func setupCell(_ cartCoordinator: CartCoodinatorProtocol) {
         self.cartCoordinator = cartCoordinator
         tableView.reloadData()
+        switch cartCoordinator.cartCount {
+        case 0:
+            selectedItemsLabel.text = "Noting selected yet"
+        case 1:
+            selectedItemsLabel.text = "1 item selected"
+        default:
+            selectedItemsLabel.text = "\(cartCoordinator.cartCount) items selected"
+        }
+
     }
 }
 

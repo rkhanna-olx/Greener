@@ -74,7 +74,7 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: HotDealsTableViewCell.reuseIdentifier, for: indexPath) as! HotDealsTableViewCell
         switch indexPath.row {
-        case 0:
+        case 2:
             (cell as? HotDealsTableViewCell)?.setupCell(type: .imageOnly, data: viewModel.hotDealsData)
         case 1:
             (cell as? HotDealsTableViewCell)?.setupCell(type: .roundedImageWithText, data: viewModel.productCategoriesData, title: "I am looking for")

@@ -51,7 +51,7 @@ class CartViewController: BaseViewController<CartViewControllerDependencyProtoco
 
 extension CartViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +64,16 @@ extension CartViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: CartProductsTableViewCell.reuseIdentifier, for: indexPath)
             (cell as? CartProductsTableViewCell)?.setupCell(dependency.cartCoordinator)
+        case 2:
+            let imageView = UIImageView()
+            cell.addSubview(imageView)
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.topAnchor.constraint(equalTo: cell.topAnchor).isActive = true
+            imageView.bottomAnchor.constraint(equalTo: cell.bottomAnchor).isActive = true
+            imageView.leadingAnchor.constraint(equalTo: cell.leadingAnchor).isActive = true
+            imageView.trailingAnchor.constraint(equalTo: cell.trailingAnchor).isActive = true
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = UIImage(named: "carbon_saved")
         default:
             cell = tableView.dequeueReusableCell(withIdentifier: CartValueTableViewCell.reuseIdentifier, for: indexPath)
             (cell as? CartValueTableViewCell)?.setupCell(totalCost: viewModel.totalCost)
@@ -73,7 +83,12 @@ extension CartViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section > 0 ? 8 : 0
+        switch section {
+        case 1:
+            return 8.0
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
