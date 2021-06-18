@@ -25,3 +25,55 @@ Few low hanging fruits suggested in the McKinsey report are as below [5]:
   4. Better communication of the sustainability narrative
 
 
+
+**How can technology help?**
+A B2B marketplace connecting the sources of green materials to industry-wide consumers shall go a long way in accelerating the jump to eco-friendly packaging.
+This will be a win-win for all parties as green material suppliers will have access to a huge market to give them sustained demand. The larger volumes shall lower the cost of the material. Industries will get easy access and more choice in sourcing green material.
+Moreover, the marketplace could provide uniform certification and an easy way of narrating the reduction in carbon footprint.
+
+
+
+**The idea**
+
+We’re reimagining how industries will source green material for food packaging. 
+It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. Providing a platform with a service of monitoring food throughout the entire process starting from placing an order to food preparation and delivery, will enable consumers to be more trustworthy and relaxed while savoring their taste buds.
+The figure to the right shows the product roadmap.
+
+
+**The solution**
+
+Built an iOS  app for solutioning the problem with the following tools
+Xcode (https://developer.apple.com/xcode/) - The IDE used for iOS App Development
+Cocoapods(https://guides.cocoapods.org/) - Dependency Management
+IBM Cloud Functions (https://cloud.ibm.com/functions/) - Cloud Function Actions
+IBM Cloudant DB (https://cloud.ibm.com/catalog/services/cloudant) - Cloudant DB 
+API Gateway (https://cloud.ibm.com/functions/apimanagement) - Cloud Functions API
+
+
+**The Architecture**
+
+
+**The Journey**
+
+
+**UI/UX Tools **
+Sketch (https://www.sketch.com/) - UI tool 
+Adobe Premiere pro (https://www.adobe.com/in/products/premiere.html) - Video editing
+Adobe After Effects (https://www.adobe.com/in/products/aftereffects.html) - video editing
+
+**Authors**
+Team - Overmorrow @OLX for WIT | Hackathon 2021
+  1.Akshita Rastogi
+  2.Monika Katiyar 
+  3.Roopsi Aggarwal
+  4.Yogesh Gurera
+  5.Rahul Khanna
+  
+Team Mentor - Nitin Shekhar 
+
+
+**Live Demo:****
+https://youtu.be/VkWzTiD84x4
+
+
+
