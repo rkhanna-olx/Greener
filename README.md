@@ -42,7 +42,7 @@ Moreover, the marketplace could provide uniform certification and an easy way of
 # The idea
 
 We’re reimagining how industries will source green material for food packaging. 
-It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. 
+It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. Providing a platform where businesses can order eco-friendly  raw materials for food packaging. They can find sellers selling sustainable options for the material they are looking for. 
 The figure to the right shows the product roadmap.
 
 ![roadmap](https://user-images.githubusercontent.com/86095130/122581513-bf590c80-d074-11eb-8eb7-e4f6a57a1e3d.jpg)
