@@ -42,7 +42,7 @@ Moreover, the marketplace could provide uniform certification and an easy way of
 # The idea
 
 We’re reimagining how industries will source green material for food packaging. 
-It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. Providing a platform with a service of monitoring food throughout the entire process starting from placing an order to food preparation and delivery, will enable consumers to be more trustworthy and relaxed while savoring their taste buds.
+It is vital to provide them with reliable providers at their fingertips so that the barrier to going green is lowered. 
 The figure to the right shows the product roadmap.
 
 ![roadmap](https://user-images.githubusercontent.com/86095130/122581513-bf590c80-d074-11eb-8eb7-e4f6a57a1e3d.jpg)
